@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout   xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="br.com.hermivaldo.demosoap.MainActivity">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Calculadora"
+        android:gravity="center"
+        android:textSize="24sp"/>
+
+    <EditText
+        android:id="@+id/etVal01"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:text="9"/>
+    <Spinner
+        android:id="@+id/spOperacao"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/operacoes"
+        android:textAlignment="center">
+
+    </Spinner>
+
+    <EditText
+        android:id="@+id/etVal02"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:text="8"/>
+
+<!--    <EditText
+        android:id="@+id/etOperador"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="+ - / *"/>-->
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Calcular"
+        android:onClick="calcular"
+        />
+
+    <TextView
+        android:id="@+id/tvResultado"
+        android:layout_marginTop="70dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:hint="0"
+        android:gravity="center"
+        android:textSize="82sp"
+        />
+
+</LinearLayout>
